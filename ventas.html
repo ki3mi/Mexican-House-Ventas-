@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ventas.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/boleta.css">
+    <title>Registro de Ventas</title>
+</head>
+<body>
+    <!-- Logo y Título -->
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!-- Título -->
+        <div class="title">
+            <h1>Registro de ventas</h1>
+        </div>
+        <a href="opciones.html"><button class="btn-volver">Volver</button></a>
+    </header>
+
+    <!-- DATOS -->
+    <!-- Cliente -->
+    <main>
+        <section class="contenedor cliente">
+            <p class="text titulo">Nombre del Cliente</p>
+            <div>
+                <input type="text" class="input-text" placeholder="Nombre del cliente">
+            </div>
+            <p class="text titulo">Teléfono</p>
+            <div>
+                <input type="text" class="input-text" placeholder="Teléfono"><br>
+            </div>
+            <span class="text">El teléfono tiene que tener 9 dígitos</span>
+            <p class="text titulo">Documento de identificación</p>
+            <div>
+                <input type="text" class="input-text" placeholder="DNI"><br>
+            </div>
+            <span class="text">El DNI debe de tener 8 dígitos</span>
+        </section>
+    
+        <!-- Productos -->
+         <section class="contenedor">
+            <div class="productos-container">
+                <h2>Buscar Productos</h2>
+                <input type="text" id="productosBuscador" class="productos-buscador" placeholder="Escribe el nombre del producto...">
+        
+                <ul class="productos-lista" id="productosResultados"></ul>
+        
+                <h3>Productos Seleccionados</h3>
+                <ul class="productos-lista productos-seleccionados" id="productosSeleccionados"></ul>
+            </div>
+         </section>
+    
+         <!-- Tipo de Venta -->
+          <section class="contenedor venta" id="tipo-venta">
+            <p class="titulo">Tipo de venta</p>
+            <div class="venta-option">
+                <p class="text-venta" id="v-local" data-tipo="venta">En Local</p>
+                <input type="checkbox" class="option" checked>
+            </div>
+            <div class="venta-option">
+                <p class="text-venta" id="c-tienda" data-tipo="venta">Rocojo en Tienda</p>
+                <input type="checkbox" class="option">
+            </div>
+            <div class="venta-option">
+                <p class="text-venta" id="v-delivery" data-tipo="venta">Delívery</p>
+                <input type="checkbox" class="option">
+            </div>
+
+            <p class="titulo">Metodo de Pago</p>
+            <!-- <div class=""></div> -->
+            <div class="venta-option">
+                <p class="text-venta" id="v-efectivo" data-tipo="venta">Efectivo</p>
+                <input type="checkbox" class="option" checked>
+            </div>
+            <div class="venta-option">
+                <p class="text-venta" id="v-tarjeta" data-tipo="venta">Tarjeta de Débito</p>
+                <input type="checkbox" class="option">
+            </div>
+            <div class="venta-option">
+                <p class="text-venta" id="v-yape" data-tipo="venta">Yape/Plin</p>
+                <input type="checkbox" class="option">
+            </div>
+            <section class="">
+                <button id="btnCompletar" class="btn-completar">Completar Compra</button>
+            </section>
+          </section>
+
+          <!-- Botón para completar compra -->
+      
+          <!-- Modal de boleta -->
+          <div id="modalBoleta" class="modal">
+              <div class="modal-contenido">
+                  <span class="cerrar-modal">&times;</span>
+                  <h2>Boleta de Compra</h2>
+                  <div id="detalleBoleta"></div>
+                  <button class="btn-cerrar">Cerrar</button>
+              </div>
+          </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/productos.js"></script>
+    <script src="js/comprar.js"></script>
+</body>
+</html>

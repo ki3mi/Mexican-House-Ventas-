@@ -1,0 +1,65 @@
+.productos-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+.productos-container h2,
+.productos-container h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.productos-buscador {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.productos-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.productos-item {
+    background: #f0f0f0;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.productos-item:hover {
+    background: #e0e0e0;
+}
+.productos-precio {
+    font-weight: bold;
+    color: #007b00;
+    margin-left: 10px;
+}
+.productos-seleccionados {
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.productos-btn-eliminar {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.productos-btn-eliminar:hover {
+    background: #cc0000;
+}

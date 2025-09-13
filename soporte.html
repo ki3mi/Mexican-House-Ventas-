@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mexican House - Contacto</title>
+  <link rel="stylesheet" href="css/estilo-contacto.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap">
+</head>
+<body>
+
+  <!-- LOGO + BOTÓN CONTACTO -->
+  <header>
+    <div class="header-center">
+      <a href="opciones.html"><img src="img/logo.png" alt="Mexican House Logo" class="logo"></a>
+      <button class="btn-contacto">Contacto</button>
+    </div>
+  </header>
+
+  <!-- TITULO -->
+  <section class="titulo">
+    <h2>¿Cómo te podemos ayudar?</h2>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="contenedor">
+
+    <!-- Reportar problema -->
+    <div class="reporte">
+      <h3>Reportar un problema</h3>
+      <label for="problema">Tipo de problema</label>
+      <select id="problema">
+        <option>Pantalla o sistema lento</option>
+        <option>Error en venta o cobro</option>
+      </select>
+
+      <label for="descripcion">Descripción del problema</label>
+      <textarea id="descripcion"></textarea>
+
+      <button class="btn-reporte">Enviar Reporte</button>
+    </div>
+
+    <!-- Guía rápida -->
+    <div class="guia">
+      <h3>Guía Rápida</h3>
+      <ol>
+        <li>
+          <p><strong>La impresora no imprime tickets</strong></p>
+          <ul><strong>
+            <li>Verifica que tenga papel.</li>
+            <li>Revisa que el cable esté conectado.</li>
+            <li>Reinicia la impresora.</li>
+          </ul></strong>
+        </li>
+        <li>
+          <p><strong>El sistema se quedó congelado</strong></p>
+          <ul><strong>
+            <li>Cierra sesión y vuelve a ingresar.</li>
+            <li>Si no responde, reinicia la computadora.</li>
+          </ul></strong>
+        </li>
+        <li>
+          <p><strong>Error al cobrar con tarjeta</strong></p>
+          <ul><strong>
+            <li>Intenta de nuevo.</li>
+            <li>Si falla otra vez, ofrece otro método de pago.</li>
+            <li>Reporta el fallo del POS.</li>
+          </ul></strong>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Contacto directo -->
+    <div class="contacto">
+        <h3>Contacto directo</h3>
+        
+        <div class="telefono">
+             <img src="img/Whatsapp.png" alt="Numero telefonico">
+             <p><strong>+51 987 654 321</strong></p>
+        </div>
+
+        <div class="gmail">
+             <img src="img/Gmail.png" alt="Correo electronico">
+             <p><strong>soporte@sabormexicano.pe</strong></p>
+        </div>
+
+        <div class="horario">
+             <img src="img/Horario.png" alt="Horario de atención">
+             <p><strong>Lunes a Sábado,<br>10:00 am - 6:00 pm</strong></p>
+        </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* Estilos base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5e1b8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  height: 200px;
+}
+
+/* Botón publicidad */
+.btn-publicidad {
+  background: linear-gradient(to top, #82D272, #407244);
+  color: white;
+  font-size: 26px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  border: none;
+  padding: 14px 200px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Secciones */
+section {
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* Premios especiales */
+.premios {
+  background-color: #09684D;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.premios h2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 50px;
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+.promociones {
+  background-color: #434072;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.promociones h2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 50px;
+  margin-bottom: 20px;
+  width: 350px;
+
+}
+
+/* Tarjetas */
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.tarjeta {
+  background: linear-gradient(to top,  #508151, #D6F461);
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;
+  text-align: center;
+  color: black;
+}
+.tarjeta2{
+  background: linear-gradient(to top,#312958 , #514690, #BDA7CB);
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;
+  text-align: center;
+  color: black;
+}
+
+.tarjeta h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #09684D;
+}
+
+.tarjeta2 h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #353173;
+}
+
+
+.tarjeta p {
+  background-color: #2D4D44;   
+  border-radius: 8px;          
+  padding: 10px;               
+  margin: 10px 0;              
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  color: #F1F5E0;
+  text-align: center;
+}
+
+.tarjeta2 p{
+    background-color: #1C1771;   
+  border-radius: 8px;          
+  padding: 10px;               
+  margin: 10px 0;              
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  color: #F1F5E0;
+  text-align: center;
+}
+
+.tarjeta2 img,
+.tarjeta img {
+  width: 100%;
+  border-radius: 8px;
+}

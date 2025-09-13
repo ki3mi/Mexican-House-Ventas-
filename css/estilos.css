@@ -1,0 +1,137 @@
+:root {
+    --color-fondo-claro: #EADCBB;
+    --color-primario: #FFD700;
+    --color-secundario: #6A5ACD;
+    --color-texto-oscuro: #333;
+    --color-texto-claro: #fff;
+    --color-borde: #ccc;
+    --color-suave: #ddd;
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--color-fondo-claro);
+}
+
+.contenedor-principal {
+    display: flex;
+    width: 100vw; 
+    height: 100vh;
+    border-radius: 0; 
+    overflow: hidden;
+}
+
+.seccion-imagen {
+    flex: 0 0 50%;
+}
+
+.seccion-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seccion-formulario {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo-sistema {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #82D272, #407244);
+    color: var(--color-texto-claro);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 0 30px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 20px;
+}
+
+.formulario-login {
+    width: 100%;
+    max-width: 350px;
+}
+
+.campo-entrada {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.campo-entrada label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--color-texto-oscuro);
+}
+
+.campo-entrada input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.contenedor-contrasena {
+    position: relative;
+}
+
+.contenedor-contrasena input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.icono-ojo {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.boton-inicio-sesion {
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+    padding: 15px;
+    background-image: radial-gradient(#434072, #7772D2);
+    color: var(--color-texto-claro);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.enlace-olvidaste {
+    display: block;
+    text-align: right;
+    width: 100%;
+    max-width: 350px;
+    font-size: 0.9rem;
+    color: #888;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.enlace-olvidaste:hover {
+    text-decoration: underline;
+}
